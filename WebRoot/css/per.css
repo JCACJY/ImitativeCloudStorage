@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/*body{*/
+	/*background-color: #eff4f8;*/
+/*}*/
+
+.main{
+	height: 650px;
+	width: 1000px;
+	position: relative;
+	left:0;
+    right:0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: white;
+    -webkit-box-shadow:0 0 20px #3b8cff;
+}
+a{
+	cursor: pointer;
+}
+
+li{
+	list-style-type:none;
+}
+
+span{
+	color: #666;
+	font-size: 18px;
+}
+
+p{
+	font-size: 15px;
+}
+input,select{
+	width: 400px;
+	height: 30px;
+	-webkit-box-shadow:0 0 5px #3b8cff;
+	border: 0;
+}
+textarea{
+	-webkit-box-shadow:0 0 5px #3b8cff;
+}
+.menu{
+	position: relative;
+	top:50px;
+	left:20px;
+	height: 500px;
+	width: 100px;
+}
+.ul1{
+	margin-left: -30px;
+}
+.tab-content{
+	position:absolute;
+	left:200px;
+	top:40px;
+	width: auto;
+}
+
+.mes span{
+	font-size: 15px;
+}
+
+tr{
+	height: 100px;
+}
+
+.pupdate{
+	position: relative;
+	left: 250px;
+	top:50px;
+}
+.pupdate input{
+	background-color: #3b8cff;
+	outline: none;
+	border: 0;
+	height: 50px;
+	width: 100px;
+	color: white;
+}
+.yanz input {
+	width: 100px;
+}
+.yanz button {
+	background-color: #3b8cff;
+	outline: none;
+	border: 0;
+	height: 40px;
+	width: 90px;
+	color: white;
+}
+.userIcon{
+	height: 50px;
+	width: 50px;
+}
+.vip{
+	position: absolute;
+	left: 140px;
+	top: 100px;
+}
+.vip img{
+	height: 23px;
+	width: 23px;
+}
+.more_cloud{
+	position: absolute;
+	left: 70px;
+	top:280px;
+}
+.more_cloud p{
+	color:red;
+}
+.msg_box{
+	position:fixed;
+	z-index:99;
+	top:200px;
+	left:700px;
+	height: 100px;
+	width: 200px;
+	background-color: white;
+	box-shadow:0 0 5px #3b8cff;
+}
+.msg_boxin{
+	position: absolute;
+	top:30px;
+	left: 30px;
+}
+.del_btn{
+	float: right;
+	margin-right: 10px;
+	height: 10px;
+	width: 10px;
+	cursor: pointer;
+}
+.del_btn p{
+	font-size: 20px;
+}

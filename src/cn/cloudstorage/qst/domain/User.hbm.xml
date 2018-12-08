@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!--private String uid;
+		private String username;
+		private String phone;
+		private String password;
+		private Integer vip;
+		private String avater;
+		private String homepath;
+		private Set<Friend> friends; -->
+	<class name="cn.cloudstorage.qst.domain.User">
+		<id name="uid" column="uid" length="50" type="java.lang.Long">
+			<generator class="increment"></generator>
+		</id>
+		<property name="username" column="username" length="20" type="java.lang.String"></property>
+		<property name="phone" column="phone" length="15" type="java.lang.String" unique="true"></property>
+		<property name="password" column="password" length="60" type="java.lang.String"></property>
+		<property name="vip" column="vip" length="5" type="integer"></property>
+		<property name="avater" column="avater" length="80" type="java.lang.String"></property>
+		<property name="homepath" column="homepath" length="80" type="java.lang.String"></property>
+		<property name="mailbox" column="mailbox" length="30" type="java.lang.String"></property>
+		<property name="restspace" column="restspace" length="8" type="java.lang.Float"></property>
+		<!-- 一位用户有多个朋友 -->
+		<set name="friends" cascade="all" inverse="false" lazy="true"><!-- batch-size="10"批量抓取 -->
+			<key>
+				<column name="uid"></column>
+			</key>
+			<one-to-many class="cn.cloudstorage.qst.domain.Friend"/>
+		</set>
+	</class>
+</hibernate-mapping>

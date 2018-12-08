@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!--private String fid;
+		private String friendname;
+		private String fvip;
+		private String friendavater;
+		private String friendgroup;
+		private User user; -->
+	<class name="cn.cloudstorage.qst.domain.Friend">
+		<!-- <cache usage="read-write"/> -->      <!-- 指定哪个类需要使用二级缓存 -->
+		<id name="fid" column="fid" length="50" type="java.lang.Long">
+			<generator class="increment"></generator>
+		</id>
+		<property name="friendname" column="friendname" length="20" type="java.lang.String"></property>
+		<property name="fvip" column="fvip" length="5" type="integer"></property>
+		<property name="friendavater" column="friendavater" length="80" type="java.lang.String"></property>
+		<property name="friendgroup" column="friendgroup" length="15" type="java.lang.String"></property>
+		<!-- <many-to-one name="user" class="cn.cloudstorage.qst.domain.User" column="uid" cascade="save-update"></many-to-one> -->	
+	</class>
+</hibernate-mapping>

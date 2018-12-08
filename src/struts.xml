@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+	<constant name="struts.action.excludePattern" value="/websocket"/>
+   	<constant name="struts.devMode" value="true"/>
+   	<constant name="struts.ui.templateDir" value="template"/>
+	<constant name="struts.ui.templateSuffix" value="ftl"/>
+	<constant name="struts.ui.theme" value="simple"/>
+ 	<constant name="struts.objectFactory" value="spring"/>
+ 	<constant name="struts.multipart.maxSize" value="2147483648"/>
+ 	<package name="mypackage" extends="struts-default">
+ 		<interceptors>
+ 			<interceptor name="permissionInterceptor" class="cn.cloudstorage.qst.interceptor.PermissionInterceptor"></interceptor>
+ 			<interceptor-stack name="mydefaultStack">
+ 				<interceptor-ref name="defaultStack"></interceptor-ref>
+ 				<interceptor-ref name="permissionInterceptor"></interceptor-ref>
+ 			</interceptor-stack>
+ 		</interceptors>
+ 		<default-interceptor-ref name="mydefaultStack"></default-interceptor-ref>
+ 		<global-results>
+ 			<result name="error" type="dispatcher">/pages/error.jsp</result>
+ 			<result name="login" type="dispatcher">/pages/login.jsp</result>
+ 		</global-results>
+ 	</package>
+ 	<include file="struts-actions.xml"></include>
+</struts>	

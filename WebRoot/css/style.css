@@ -1,0 +1,790 @@
+/*头部导航*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+dd {
+    display: block;
+    -webkit-margin-start: 40px;
+}
+div {
+    display: block;
+}
+ul {
+    list-style: none outside none;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    list-style: none;
+}
+#hd{
+    width:auto;
+    margin:0 auto;
+    text-align:left;
+    min-width:1103px;
+}
+.module-header {
+    position: relative;
+    min-width: 1000px;
+    height: 62px;
+}
+.module-header-wrapper {
+    background: #eff4f8;
+}
+.xtJbHcb {
+    width: 100%;
+    height: 40px;
+    min-width: 1050px;
+    font-size: 12px;
+    margin-top: -20px;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 0;
+    font-family: microsoft yahei,tahoma,arial;
+}
+.EHazOI {
+    width: 142px;
+    height: 32px;
+    margin: 4px 0;
+    background-image: url(/CloudStorage/images/logo.png);
+    background-position: center center;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+ .EHazOI, .vyQHNyb {
+    float: left;
+}
+.vyQHNyb {
+    width: auto;
+    height: 100%;
+    padding-left: 34px;
+    position: relative;
+}
+ .cMEMEF {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    height: 42px;
+    line-height: 38px;
+    margin: 0 25px;
+    vertical-align: middle;
+    position: relative;
+}
+.CDaavKb,.gOIbzPb {
+    margin-right: 10px;
+    position: relative;
+    color: #fff;
+    height: 100%;
+    float: right;
+}
+.DIcOFyb {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin-right: 15px;
+    color: #424e67;
+    font-size: 14px;
+}
+.user-photo-box {
+    display: inline-block;
+    vertical-align: middle;
+    width: 34px;
+    height: 34px;
+    background: rgba(0,0,0,.1);
+    background-position: center center;
+    border-radius: 50%;
+}
+.user-photo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+}
+.user-name {
+    margin-left: 10px;
+}
+.user-exit{
+    margin-right: 50px;
+}
+.gOIbzPb {
+    margin-top: 10px;
+}
+#bd {
+    margin-top: -15px;
+    text-align: left;
+    min-width: 1103px;
+    background: #eff4f8;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+
+}
+/*左边部分*/
+.yao-b {
+    width: 194px;
+    position: relative;
+    float: left;
+}
+/* .KHbQCub {
+    width: 194px;
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}*/
+
+.module-aside .duEaNs .b-list-item a, .module-aside .duEaNs .b-list-item a .text1 {
+    height: 38px;
+    line-height: 38px;
+}
+.module-aside .duEaNs a {
+    display: block;
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    line-height: 46px \9;
+    padding: 0 0 0 15px;
+    font-size: 14px;
+    text-decoration: none;
+    zoom: 1;
+}
+.remainingSpaceUi {
+    height: 8px;
+    width: 140px;
+    background: rgba(0,0,0,.1);
+    line-height: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.remainingSpaceUi_span {
+    height: 8px;
+    line-height: 0;
+    display: block;
+    border-radius: 10px;
+}
+ .DIeHPCb {
+    position: relative;
+    left: 0;
+    margin-top: 7px;
+    float: left;
+}
+.GELdyA {
+    text-align: right;
+    margin-top: 3px;
+    float: right;
+}
+.remaining-quota-kr {
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+    border-radius: 15px;
+    line-height: 22px;
+}
+#yao-main{
+    float: right;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    min-width: 1050px;
+}
+.main-content {
+    border-top: 1px solid #d8dfea;
+    border-left: 1px solid #d8dfea;
+    border-right: 1px solid #d8dfea;
+    float: left;
+    width: 86%;
+    height: 100%;
+    /* overflow: hidden; */
+    overflow-y:scroll;
+    position: relative;
+    background: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-right: 10px;
+    margin-top:10px;
+}
+.content-top{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 60px;
+}
+.content-top-left{
+    position: relative;
+    float: left;
+    width: auto;
+    height: 100%;
+}
+.file_upload,.new_files,.new_files1,.file_function,.file_function1,.file_function2{
+    position: relative;
+    text-decoration: none;
+    height: 30px;
+    float: left;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.file_upload{
+    width: 80px;
+    color: white;
+    background-color: #3b8cff;
+    border: none;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.new_files,.new_files1,.file_function,.file_function1,.file_function2{
+    color: #3b8cff;
+    background-color: white;
+}
+.new_files,.new_files1{
+    width: 120px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 1px solid #3b8cff;
+}
+.new_files1{
+    cursor:default;
+    color:#E5E0E0;
+    text-decoration:none;
+}
+.file_function,.file_function1,.file_function2{
+    width: 70px;
+    color: #3b8cff;
+    background-color: white;
+    border-left: 1px solid #3b8cff;
+    border-bottom:1px solid #3b8cff;
+    border-top:1px solid #3b8cff;
+    overflow: hidden;
+}
+.content-top-right{
+    position: relative;
+    float: left;
+    width: auto;
+    height: 100%;
+    margin-left: 15px;
+}
+.file_function{
+    border-right: hidden;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+.file_function1{
+    border-right: hidden;
+}
+.file_function2{
+    border-right: 1px solid #3b8cff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.content-body{
+    position: relative;
+    float: left;
+    height: auto;
+    width: 100%;
+}
+.content-body-top{
+    position: relative;
+    height: 20px;
+    width: 100%;
+    text-align: left;
+    float: left;
+}
+.file_title1,.file_title1{
+    position: relative;
+    display:inline-block;
+    float: left;
+}
+.file_title1{
+    margin-left: 25px;
+}
+.table_title{
+    position: relative;
+    z-index: 1;
+    height: 52px;
+    width: 100%;
+    float: left;
+    font-size: 12px;
+}
+.table_title_ul{
+    position: relative;
+    width: 100%;
+    float: left;
+    cursor: pointer;
+    border-top-color: #fff;
+    height: 36px;
+    line-height: 36px;
+    color: #888;
+    overflow: hidden;
+    padding: 0;
+    border-bottom: 1px solid #f2f6fd;
+}
+.table_title_li1{
+     position: relative;
+     float: left;
+     width: 60%;
+ }
+.table_title_li1 span{
+    position: relative;
+    margin-left: 25px;
+}
+.table_title_li2{
+    position: relative;
+    float: left;
+    width: 16%;
+}
+.table_title_li3{
+    position: relative;
+    float: left;
+    width: 23%;
+}
+.table_body{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    color:black;
+}
+.table_body_dd1,.table_body_dd,.table_body_dd2{
+    position: relative;
+    height: 44px;
+    width: 100%;
+    float: left;
+    line-height: 44px;
+    border-bottom: 1px solid #f2f6fd;
+    white-space: nowrap;
+    background: #FFF;
+    margin-left: 0px;
+}
+
+.file-name{
+    position: relative;
+    height: 44px;
+    width: 60%;
+    float: left;
+
+}
+.table_body_Folder,.table_body_Picture,.table_body_Misc,.table_body_ZIP,.table_body_Word,.table_body_Text,.table_body_Video,.table_body_PDF{
+    position: relative;
+    float: left;
+    width: 26px;
+    height: 26px;
+    margin-top:10px;
+    margin-left: 25px;
+}
+.table_body_Folder{
+    background: url("/CloudStorage/images/Folder.png")no-repeat;
+}
+
+.file_body{
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    color:black;
+}
+.file-size{
+    position: relative;
+    width: 16%;
+    height: 100%;
+    float: left;
+}
+.file-time{
+    position: relative;
+    width: 23%;
+    height: 100%;
+    float: left;
+}
+.mymenu1{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+.mymenu1 li{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #ebeeed;
+}
+.mymenu1 li a{
+    position: relative;
+    margin-top: 10px;
+}
+/*新建文件夹*/
+.new_folder_form{
+    position: relative;
+    float: left;
+    height: auto;
+    width: auto;
+    margin-left: 15px;
+}
+.new_folder_name{
+    position:relative;
+    float: left;
+    width: 150px;
+    height: 25px;
+    margin-top: 10px;
+    border:1px solid #3b8cff;
+}
+.new_folder_submit,.new_folder_cancel{
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    width: 50px;
+    height:25px;
+    line-height: 25px;
+    background-color: #3b8cff;
+}
+.mymenu1_1{
+    cursor:default;
+    color:#E5E0E0;
+    text-decoration:none;
+}
+
+
+/*登录界面*/
+.login_body{
+    background-color: #d4dcd7;
+}
+
+.login_content{
+    position: relative;
+    height: 870px;
+    min-width: 1200px;
+    width: 100%;
+    overflow: hidden;
+    background: url("/CloudStorage/images/login_bg.jpg");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+.login_buttom{
+    position: relative;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #b6bac3;
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+.login_buttom a{
+    text-decoration: none;
+    color: #b6bac3;
+}
+.login_main{
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    clear: both;
+    width: 1102px;
+    height: 90%;
+    overflow: hidden;
+    top: 10%;
+}
+.left_text{
+    position: absolute;
+    bottom: 80px;
+    font-size: 44px;
+    color: #fff;
+}
+.left_text p{
+    position: relative;
+    padding: 10px 100px;
+}
+.left-quote{
+    background: url(/CloudStorage/images/leftquote.png) top no-repeat;
+    display: inline-block;
+    position: absolute;
+    left: 40px;
+    top: 8px;
+    width: 46px;
+    height: 32px;
+}
+.right-quote{
+    background: url(/CloudStorage/images/rightquote.png) no-repeat top;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    width: 46px;
+    height: 32px;
+}
+.login_middle{
+    width: 352px;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.login_header{
+    position: relative;
+    width: 100%;
+    min-height: 396px;
+    z-index: 999;
+    background: #fff;
+    border-radius: 4px;
+    vertical-align: middle;
+    box-shadow: rgba(0,0,0,0.3) 0 0 50px;
+}
+.login_header_title{
+    height: 60px;
+}
+.login_header_title h4{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 32px;
+    color: #333;
+    font-weight: 100;
+}
+.login_form{
+    display: block;
+    position: relative;
+    width: 312px;
+    height: 229px;
+    margin: auto;
+}
+.login_form_error{
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: auto;
+    min-height: 28px;
+    color: #fc4343;
+}
+.userNameWrapper{
+    border: 1px solid #eaeaea;
+    z-index: 21;
+    border-bottom-width: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    position: relative;
+    margin-bottom: 0;
+    height: 42px;
+    clear: both;
+    font-size: 12px;
+    padding: 0;
+    list-style: none;
+}
+.userNameLabel {
+    position: absolute;
+    font-size: 12px;
+    color: #666;
+    padding-bottom: 10px;
+    text-indent: -999em;
+    height: 10px;
+    width: 17px;
+    top: 11px;
+    z-index: 999;
+    left: 11px;
+    display: block;
+    background: 0;
+}
+.userName_class{
+    padding-left: 16px!important;
+    border: 0;
+    border-bottom: 1px solid #e7e7e7;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    position: relative;
+    z-index: 17;
+    display: block;
+    height: 41px;
+    width: 310px;
+    font-size: 14px;
+    color: #666;
+    transition: .3s;
+    line-height: 26px;
+    background-color: #fefefe;
+}
+.passwordWrapper{
+    border: 1px solid #e7e7e7;
+    border-top-width: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    position: relative;
+    height: 42px;
+    margin-bottom: 0;
+    clear: both;
+    z-index: 18;
+}
+.passwordLabel{
+    position: absolute;
+    font-size: 12px;
+    color: #666;
+    padding-bottom: 10px;
+    text-indent: -999em;
+    height: 10px;
+    width: 17px;
+    top: 11px;
+    z-index: 999;
+    left: 11px;
+    display: block;
+    background: 0;
+    margin: 0;
+}
+.password_class{
+    padding-left: 16px;
+    border: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    position: relative;
+    z-index: 17;
+    display: block;
+    height: 41px;
+    width: 310px;
+    font-size: 14px;
+    color: #666;
+    transition: .3s;
+    line-height: 26px;
+    background-color: #fefefe;
+}
+.submitWrapper{
+    position: relative;
+    margin-bottom: 0;
+    clear: both;
+    z-index: 18;
+    padding-top: 20px;
+}
+.submit_class{
+    width: 100%;
+    height: 41px;
+    background: #3582f8;
+    border-radius: 4px;
+    transition: .3s;
+    font-size: 16px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 100;
+}
+.login_register{
+    text-decoration: none;
+    margin: 0 4px;
+    position: relative;
+    top: 0;
+    font-size: 14px;
+    color: #3582f8;
+    right: 0;
+    float: right;
+    margin-top: 15px;
+}
+.login_problem{
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    top: 14px;
+    margin: 0;
+}
+/*注册界面*/
+.register_body{
+    background-color: #d4dcd7;
+}
+.register_content{
+    position: relative;
+    height: 870px;
+    min-width: 1200px;
+    width: 100%;
+    overflow: hidden;
+    background: url("/CloudStorage/images/bg3.jpg");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+.register_table{
+    position: relative;
+    width: 720px;
+    height: 552px;
+    overflow: hidden;
+    background-color: white;
+    margin: auto;
+    top:100px;
+}
+.register_table_title{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    /*background-color: red;*/
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+.register_table_title p{
+    position: relative;
+    top:10px;
+    font-family: "microsoft yahei"
+
+}
+.register_table_content{
+    position: relative;
+    width: 720px;
+    height: 300px;
+    left: 80px;
+    top: 30px;
+    overflow: hidden;
+    float: left;
+    color: #333333;
+}
+.register_table_content table{
+    border-collapse:separate;
+    border-spacing:10px;
+}
+.register_table_content p{
+    color: red;
+    text-align: center;
+}
+.to_login{
+    position: relative;
+    height: 50px;
+    left: 500px;
+}
+
+.input_text{
+    height: 40px;
+    width: 300px;
+}
+.btn_reg{
+    width: 100%;
+    height: 40px;
+    background-color: #3582f8;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

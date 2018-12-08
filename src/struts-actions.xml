@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+	<package name="userManager" namespace="/user" extends="mypackage">
+		<!-- 用户注册 -->
+		<action name="_adduser" class="userAction" method="register">
+			<interceptor-ref name="defaultStack"/>
+			<!-- <interceptor-ref name="token"/>
+			<result name="invalid.token" type="redirect">/pages/login.jsp</result> -->
+			<result name="success" type="redirect">/pages/login.jsp</result>
+			<result name="input">/pages/register.jsp</result>
+		</action>
+		<!-- 用户登录 -->
+		<action name="_login" class="userAction" method="login">
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+			<result name="success" type="redirect">/pages/welcome.jsp</result>
+			<result name="input">/pages/login.jsp</result>
+		</action>
+		<!-- 用户注销 -->
+		<action name="_logout" class="userAction" method="logout">
+			<result name="success" type="redirect">/pages/login.jsp</result>
+		</action>
+		<!-- 用户更新 -->
+		<action name="_changebaseinfo" class="changeInfoAction" method="modifyBaseInfo">
+			<result name="success">/pages/people.jsp</result>
+			<result name="input">/pages/people.jsp</result>
+		</action>
+		<!-- 用户修改密码 -->
+		<action name="_changepassword" class="changeInfoAction" method="modifyPassword">
+			<result name="success" type="redirect">/pages/login.jsp</result>
+			<result name="input">/pages/people.jsp</result>
+		</action>
+	</package>
+	
+	<package name="fileManager" namespace="/fileOperation" extends="mypackage,json-default">
+		<!-- 文件上传 -->
+		<action name="fileUpload" class="uploadFileAction" method="upload">
+			<result name="success" type="chain">_showFiles</result>
+			<result name="error">/pages/error.jsp</result>
+		</action>
+		<!-- 文件下载  -->
+		<action name="fileDownload" class="downloadFileAction" method="download">
+			<result name="success" type="stream">
+		  		<param name="contentType">application/octet-stream</param>
+	  			<param name="contentDisposition">attachment;filename="${fileName}"</param>
+	  			<param name="inputName">fileInputStream</param>
+	  			<param name="bufferSize">1024</param>
+			</result>
+			<result name="none" type="chain">_showFiles</result>
+		</action>
+		<!-- 查看文件目录下的子文件 -->
+		<action name="_showFiles" class="showFilesAction" method="showFiles">
+			<result name="success" type="json">
+				<param name="root">fileSet</param>
+			</result>
+			<result name="error">/pages/error.jsp</result>
+		</action>
+		<!-- 按类型查看文件 -->
+		<action name="_kindFiles" class="findFilesByKindAction" method="showFilesByKind">
+			<result name="success" type="json">
+				<param name="root">sameKindFiles</param>
+			</result>
+			<result name="error" type="json">
+				<param name="message">sameKindFiles</param>
+			</result>
+		</action>
+		<!-- 创建文件夹 -->
+		<action name="_createDir" class="fileOperationAction" method="createDir">
+			<result name="success" type="chain">_showFiles</result>
+			<result name="error" type="chain">_showFiles</result>
+		</action>
+		<!-- 修改文件名 -->
+		<action name="_changeFileName" class="fileOperationAction" method="changeFileName">
+			<result name="success" type="chain">_showFiles</result>
+			<result name="error" type="chain">_showFiles</result>
+		</action>
+		<!-- 拷贝文件 -->
+		<action name="_copyFileOrDir" class="fileOperationAction" method="copyFileOrDir">
+			<result name="success" type="json"></result>
+			<result name="error" type="json"></result>
+		</action>
+		<!-- 剪切文件 -->
+		<action name="_cutFileOrDir" class="fileOperationAction" method="cutFileOrDir">
+			<result name="success" type="json"></result>
+			<result name="error" type="json"></result>
+		</action>
+		<!-- 删除文件 -->
+		<action name="_deleteFile" class="fileOperationAction" method="deleteFile">
+			<result name="success" type="chain">_showFiles</result>
+			<result name="error" type="chain">_showFiles</result>
+		</action>
+	</package>
+	<package name="friendManager" namespace="/friend" extends="mypackage,json-default">
+		<!--取得用户好友  -->
+		<action name="_getfriends" class="findFriendsAction" method="findFriends">
+			<result name="success" type="json">
+				<param name="root">friends_group</param>
+			</result>
+			<result name="error">/pages/error.jsp</result>
+		</action>
+	</package>
+</struts>	
