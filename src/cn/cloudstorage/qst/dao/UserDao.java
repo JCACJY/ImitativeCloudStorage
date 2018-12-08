@@ -19,4 +19,7 @@ public interface UserDao {
 	
 	public Set<Friend> findFriendsByID(Long id);
 	
+	
+	//zhushi
+	
 }
